@@ -1,7 +1,6 @@
 [build]
 
-builder = "Nixpacks"
-buildCommand = "npm i && npm run build:web"
+builder = "dockerfile"
 
 [deploy]
 startCommand = "npm run prisma:migrate-deploy && npm run dev"
