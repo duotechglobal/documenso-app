@@ -1,6 +1,6 @@
 [build]
 
-builder = "nixpacks"
+builder = Nixpacks
 buildCommand = "npm i && npm run build:web"
 
 [deploy]
