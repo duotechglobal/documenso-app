@@ -51,7 +51,7 @@ COPY --from=builder /app/out/json/ .
 COPY --from=builder /app/out/package-lock.json ./package-lock.json
 
 RUN npm ci
-RUN cp .env.example .env
+COPY .env.example .env
 
 # Then copy all the source code (as it changes more often)
 COPY --from=builder /app/out/full/ .
