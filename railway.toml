@@ -2,7 +2,3 @@
 
 builder = "DOCKERFILE"
 dockerfilePath = "/docker/Dockerfile"
-
-# [deploy]
-
-# startCommand = "npm run prisma:migrate-deploy && npm run dev"
